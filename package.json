@@ -1,0 +1,33 @@
+{
+  "name": "higlass-register",
+  "version": "0.1.0",
+  "description": "Helper tool to register pluggable tracks",
+  "author": "Fritz Lekschas",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Fritz Lekschas",
+      "url": "http://github.com/flekschas"
+    }
+  ],
+  "main": "src/index.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "unminified-webpack-plugin": "^2.0.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.13"
+  },
+  "scripts": {
+    "build": "webpack --mode production"
+  }
+}
