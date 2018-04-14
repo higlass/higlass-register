@@ -11,6 +11,10 @@
     }
   ],
   "main": "src/index.js",
+  "unpkg": "dist/higlass-register.min.js",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
