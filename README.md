@@ -21,12 +21,12 @@ To register your track as a plugin
 import register from 'higlass-register';
 
 import MyFancyNewHiGlassTrack from './MyFancyNewHiGlassTrack';
-import config from './config';
 
 register({
   name: 'MyFancyNewHiGlassTrack',
   track: MyFancyNewHiGlassTrack,
-  extends: 'Track',
-  config,
+  config: MyFancyNewHiGlassTrack.config,
 });
 ```
+
+Take a look at [HiGlass GeoJSON Track](https://github.com/flekschas/higlass-geojson) for how to write a pluggable track.
