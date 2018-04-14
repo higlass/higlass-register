@@ -5,8 +5,8 @@ const UnminifiedWebpackPlugin = require('unminified-webpack-plugin');
 
 module.exports = {
   output: {
-    filename: 'hgRegister.min.js',
-    library: 'hgRegister',
+    filename: 'higlass-register.min.js',
+    library: 'higlass-register',
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist'),
   },
