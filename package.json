@@ -1,8 +1,14 @@
 {
   "name": "higlass-register",
-  "version": "0.1.0",
-  "description": "Helper tool to register pluggable tracks",
+  "version": "0.1.1",
+  "description": "HiGlass helper tool for registering pluggable tracks",
   "author": "Fritz Lekschas",
+  "keywords": [
+    "HiGlass",
+    "Track",
+    "Register",
+    "Helper"
+  ],
   "license": "MIT",
   "contributors": [
     {
@@ -10,6 +16,10 @@
       "url": "http://github.com/flekschas"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hms-dbmi/higlass-register.git"
+  },
   "main": "src/index.js",
   "unpkg": "dist/higlass-register.min.js",
   "files": [
