@@ -19,7 +19,7 @@ deploy:
     on:
       branch: master
       tags: true
-      repo: hms-dbmi/higlass-register
+      repo: higlass/higlass-register
   - provider: npm
     email: service@lekschas.de
     api_key:
@@ -27,4 +27,4 @@ deploy:
     on:
       branch: master
       tags: true
-      repo: hms-dbmi/higlass-register
+      repo: higlass/higlass-register
