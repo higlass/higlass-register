@@ -19,15 +19,22 @@ npm install --save-dev higlass-register
 
 To register your track as a plugin
 
-```
+```javascript
 import register from 'higlass-register';
 
 import MyFancyNewHiGlassTrack from './MyFancyNewHiGlassTrack';
 
-register({
-  track: MyFancyNewHiGlassTrack,
-  config: MyFancyNewHiGlassTrack.config,
-});
+register(
+  {
+    track: MyFancyNewHiGlassTrack,
+    config: MyFancyNewHiGlassTrack.config,
+  },
+  {
+    // Set to `true` if you want to override previously registered track that
+    // define the same track type.
+    force: false 
+  }
+);
 ```
 
 Take a look at [HiGlass GeoJSON Track](https://github.com/flekschas/higlass-geojson) for how to write a pluggable track.
