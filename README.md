@@ -7,7 +7,7 @@
 
 If you develop pluggable tracks for HiGlass please use this simple tool to _register_ your tracks.
 
-_Note, `higlass-register` is nothing more than an agreed way of exposing plugins to HiGlass. You could circumvent `higlass-register` but then you'll have to take of staying up to date with the registration process yourself._
+_Note, `higlass-register` is nothing more than an agreed way of exposing plugins to HiGlass. You could circumvent `higlass-register` but then you'll have to take of staying up to date with the plugin registration process yourself._
 
 ## Installation
 
@@ -25,7 +25,6 @@ import register from 'higlass-register';
 import MyFancyNewHiGlassTrack from './MyFancyNewHiGlassTrack';
 
 register({
-  name: 'MyFancyNewHiGlassTrack',
   track: MyFancyNewHiGlassTrack,
   config: MyFancyNewHiGlassTrack.config,
 });
