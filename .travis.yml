@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '8'
+- '12'
 branches:
   only:
   - master
@@ -23,7 +23,7 @@ deploy:
   - provider: npm
     email: service@lekschas.de
     api_key:
-      secure: XwVB/R1fOEiQJ+/GQ5/FpqGnJz2a8/t0nnV8ZRCAr+Rw3sWYF1Vtvv8aF2caL9sFuE9v4+3h8S1m/lu340siiyZu9pfURYdBNZsbF/n3mAu+lDcILSTB2t5GJTFgrWMb3sjAF934nfYv9nYIcGu3FiVVZwB2z/GvYNkvOcdtIZ4gM4N1xuTcNAMaH2WLmN83SMW2zEzQC4mXmM+zXnUWP8yHr/kAm1/murnYZVqz/8QYzsm2HAG+9JtfPkfA3rLXG8U4sY/Mdec/QsNLl1DQw5TSh4Ri38xrY47Q6s/IQAm0WGGEspbSksBuQfDdCOylJdjmzJZBgKOpsKYZqOPZLNRHtDxci4nJdlPVl0Ic7A/0+zJ49WacUgQwzkV8CNhfMu69hP4KQ1QI0scRmkxw02ds/mOy91/iSVdGyi74cU1ExKThVKkFiqgGxzDR3FSxOqxjPAIZb7jKMnPXDnxPdnWD92AblJLQvLGxRfUzZ3oi8RjkdK+4Zz82VbCdYhby49n3Qll6imrLXEMA4dHTz5vG2+ZIOZb+pS1fHs4Qv8ecxjWjsZkyFwEhcqw+GJAvcjfvNCbwc0RfQyvT/0DFhcoCo3liEuil5wFfNvDhkGqCvqD4pkx42Q8NHZap3mMpk5jKOdI0EFQWuOhINs3MNTtr6g4aGulOxafN+Gk/SAE=
+      secure: c8/0yPdtgRD3rUcpJNT0ngJGRLZlwtToCyp5cUN90noIW9IaCFyRZcpnuZGRGl88WS51O+Uf30I1iyNobIfQmQr7N4SkiijVH+s/UJORFS/nXEAnIYRzwyG++3bOulFuK7U63K6tRKHfrwjFwc9bvhQNuOAHd8Ec5t8e0v59/DccsPE3Hbkce5T4DfcS08LIzKLYxu9xebEJ+v3xZcF3f6RCDr8NBrpxVMO0hBSjI//g3WLj6JZlCe57vCupHEhyIcUvmKzuXe93LhxjTyEAs12uPiu14lrhifI7ZklwlqMrdAd6ZjLtBAlq1SGFjxhgGPOzTT4gzzNkRjS//xarIlRvwVI2fty8LAEoASK5kGZ1S9xrdhXfQO+UurIBR9C+PEtELFLSjqcexYZNM4PyyuBy943XQUKh7s6fjfOGIcyQa+QNuMI8sFIONsHSVNjlHTWutfcKTY0hXNbPyZsHwRJxokZwo3OMJ6xVMTEnJWa/nVoVBZjYrY0ftYwFCgEU2NZNGC6tSmxGKo+mk5cDTb3RupWGom7sG7zXWTLBzYVnnQCjVmIJIyBebLE5CJc7XvwlSzHRVOO48J+q0TBNEX4u70QxVZwi+D7NznjqCEranLW7jbHpT3iRhpG+2F7w39ASBO22qzxE90ZpYfdLSM3dSOKhoPl8UQ96oM24KdA=
     on:
       branch: master
       tags: true
