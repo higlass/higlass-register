@@ -42,7 +42,7 @@ const registerDataFetcher = (dataFetcherDef, { force = false } = {}) => {
   } else {
     window.higlassDataFetchersByType[dataFetcherDef.config.type] = dataFetcherDef;
   }
-}
+};
 
 export default register;
 export { registerTrack, registerDataFetcher };
