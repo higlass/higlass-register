@@ -28,7 +28,7 @@ const registerTrack = (trackDef, { force = false } = {}) => {
 
 const register = (trackDef, ...args) => {
   // eslint-disable-next-line no-console
-  console.warn('register() is deprecated. Please use registerTrack() or registerDataFetcher().');
+  console.warn('register() is deprecated. Please use registerTrack() instead.');
   registerTrack(trackDef, ...args);
 };
 
