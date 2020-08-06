@@ -26,12 +26,6 @@ const registerTrack = (trackDef, { force = false } = {}) => {
   }
 };
 
-const register = (trackDef, ...args) => {
-  // eslint-disable-next-line no-console
-  console.warn('register() is deprecated. Please use registerTrack() instead.');
-  registerTrack(trackDef, ...args);
-};
-
 const registerDataFetcher = (dataFetcherDef, { force = false } = {}) => {
   if (window.higlassDataFetchersByType[dataFetcherDef.config.type] && !force) {
     // eslint-disable-next-line
@@ -44,5 +38,13 @@ const registerDataFetcher = (dataFetcherDef, { force = false } = {}) => {
   }
 };
 
+const register = (definition, options = {}) => {
+  const { pluginType = 'track' } = options;
+  if (pluginType === 'track') {
+    registerTrack(definition, options);
+  } else if (pluginType === 'dataFetcher') {
+    registerDataFetcher(definition, options);
+  }
+};
+
 export default register;
-export { registerTrack, registerDataFetcher };
