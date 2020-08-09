@@ -15,7 +15,7 @@ _Note, `higlass-register` is nothing more than an agreed way of exposing plugins
 npm install --save-dev higlass-register
 ```
 
-## Usage
+## Usage: plugin tracks
 
 To register your track as a plugin
 
@@ -38,3 +38,27 @@ register(
 ```
 
 Take a look at [HiGlass GeoJSON Track](https://github.com/flekschas/higlass-geojson) for how to write a pluggable track.
+
+## Usage: plugin data fetchers
+
+To register your data fetcher as a plugin
+
+```javascript
+import register from 'higlass-register';
+
+import MyFancyNewHiGlassDataFetcher from './MyFancyNewHiGlassDataFetcher';
+
+register(
+  {
+    dataFetcher: MyFancyNewHiGlassDataFetcher,
+    config: MyFancyNewHiGlassDataFetcher.config,
+  },
+  {
+    // The default pluginType is 'track', so specify 'dataFetcher' here.
+    pluginType: 'dataFetcher',
+    // Set to `true` if you want to override previously registered data fetcher that
+    // define the same data fetcher type.
+    force: false 
+  }
+);
+```
