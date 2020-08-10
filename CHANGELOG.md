@@ -1,3 +1,7 @@
+## v0.3.0
+
+- Allow registering data fetchers
+
 ## v0.2.0
 
 - Remove the unnecessary `name` property to avoid accidental overwrites
